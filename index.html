@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ROJ3D</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-plane rotation="-90 90 0" position="0 0 -8" color="#90EE90" height="10" width="10" depth="5"></a-plane>
+    <a-sky color="#ADD8E6"></a-sky>
+
+    <!--Trees in scene-->
+      <a-cylinder position="-3.407 1.52 -4.37" color="#765c48" height="3" radius=".3"></a-cylinder>
+      <a-cone position="-3.407 3.754 -4.37" color="#228B22" radius=".8" height="1.5"></a-cone>
+      <a-cylinder position="-2.926 1.52 -8.066" color="#765c48" height="3" radius=".3"></a-cylinder>
+      <a-cone position="-2.926 3.754 -8.066" color="#228B22" radius=".8" height="1.5"></a-cone>
+      <a-cylinder position="-.391 1.52 -6.713" color="#765c48" height="3" radius=".3"></a-cylinder>
+      <a-cone position="-.391 3.754 -6.713" color="#228B22" radius=".8" height="1.5"></a-cone>
+      <a-cylinder position="2.407 1.52 -4.37" color="#765c48" height="3" radius=".3"></a-cylinder>
+      <a-cone position="2.407 3.754 -4.37" color="#228B22" radius=".8" height="1.5"></a-cone>
+      <a-cylinder position="2.451 1.52 -7.882" color="#765c48" height="3" radius=".3"></a-cylinder>
+      <a-cone position="2.451 3.754 -7.882" color="#228B22" radius=".8" height="1.5"></a-cone>
+      <a-cylinder position="1.273 1.52 -9.766" color="#765c48" height="3" radius=".3"></a-cylinder>
+      <a-cone position="1.273 3.754 -9.766" color="#228B22" radius=".8" height="1.5"></a-cone>
+
+      <!--ATST far leg-->
+      <a-box position=".538 .066 -8.925" rotation="0 0 0" color="#808080" height=".15" width=".25" depth=".20"></a-box>
+      <a-box position=".679 .342 -8.928" rotation="0 0 -12" color="#A9A9A9" height=".8" width=".125" depth=".10"></a-box>
+      <a-cylinder position=".801 .806 -7.947" rotation="0 90 90" color="#A9A9A9" height=".125" radius=".15"></a-cylinder>
+      <a-box position=".723 1.217 -8.929" rotation="0 0 12" color="#A9A9A9" height=".6" width=".125" depth=".12"></a-box>
+
+      <!--ATST close leg-->
+      <a-box position=".538 .066 -7.939" rotation="0 0 0" color="#808080" height=".15" width=".25" depth=".20"></a-box>
+      <a-box position=".679 .317 -7.948" rotation="0 0 -12" color="#A9A9A9" height=".8" width=".125" depth=".10"></a-box>
+      <a-cylinder position=".801 .806 -8.927" rotation="0 90 90" color="#A9A9A9" height=".125" radius=".15"></a-cylinder>
+      <a-box position=".723 1.217 -7.946" rotation="0 0 12" color="#A9A9A9" height=".6" width=".125" depth=".12"></a-box>
+
+      <!--ATST head pieces-->
+      <a-box position=".656 1.541 -8.436" rotation="0 0 90" color="#808080" height=".3" width=".15" depth="1.109"></a-box>
+      <a-cylinder position=".656 1.692 -8.436" rotation="0 0 0" color="#A9A9A9" height=".15" radius=".20"></a-cylinder>
+      <a-box position=".699 2.156 -8.436" rotation="0 0 0" color="#808080" height=".8" width=".8" depth=".8"></a-box>
+
+      <!--ATST head detail (hatch + eyes + blasters )-->
+      <a-cylinder position=".832 2.542 -8.436" rotation="0 0 0" color="#A9A9A9" height=".1" radius=".2"></a-cylinder>
+      <a-cylinder position=".832 2.532 -8.436" rotation="0 0 0" color="#808080" height=".1" radius=".22"></a-cylinder>
+      <a-box position=".277 2.119 -8.436" rotation="0 0 -12" color="#808080" height=".7" width=".2" depth=".8"></a-box>
+      <a-box position=".24 2.316 -8.221" rotation="0 0 -12" color="black" height=".1" width=".1" depth=".1"></a-box>
+      <a-box position=".24 2.316 -8.643" rotation="0 0 -12" color="black" height=".1" width=".1" depth=".1"></a-box>
+      <a-cylinder position=".175 1.95 -8.377" rotation="0 0 90" color="#A9A9A9" height=".5" radius=".04"></a-cylinder>
+      <a-cylinder position=".175 1.95 -8.519" rotation="0 0 90" color="#A9A9A9" height=".5" radius=".04"></a-cylinder>
+
+    <!--Speeder body pieces-->
+    <a-box position="-2.201 .270 -5.957" color="#765c48" height=".2" width=".7" depth=".2"></a-box>
+    <a-box position="-2.567 .293 -5.957" color="#765c48" height=".15" width=".2" depth=".15"></a-box>
+    <a-cylinder position="-2.841 .287 -5.904" rotation="0 0 90" color="#808080" height=".5" radius=".02"></a-cylinder>
+    <a-cylinder position="-2.841 .287 -6.009" rotation="0 0 90" color="#808080" height=".5" radius=".02"></a-cylinder>
+    <a-tetrahedron position="-3.079 .284 -5.955" rotation="90 45 0" color="#765c48" height=".2" width=".2" radius=".2"></a-tetrahedron>
+
+    <!--Speeder body detail-->
+    <a-cylinder position="-1.836 .291 -5.904" rotation="0 0 90" color="#808080" height=".02" radius=".035"></a-cylinder>
+    <a-cylinder position="-1.836 .291 -6.014" rotation="0 0 90" color="#808080" height=".02" radius=".035" ></a-cylinder>
+    <a-cone position="-1.801 .291 -5.904" rotation="0 0 -90" color="#E25822" radius-bottom=".035" height=".05"></a-cone>
+    <a-cone position="-1.801 .291 -6.012" rotation="0 0 -90" color="#E25822" radius-bottom=".035" height=".05"></a-cone>
+    <a-cylinder position="-2.446 .423 -5.904" rotation="-5 0 -12" color="#333333" height=".15" radius=".02"></a-cylinder>
+    <a-cylinder position="-2.446 .423 -6.009" rotation="5 0 -12" color="#333333" height=".15" radius=".02"></a-cylinder>
+
+    <!--Sky pieces (death star and falcon)-->
+    <a-sphere src="DSTexture.jpg" position="-5 7.5 -13.044" rotation="-20 -165 0" color="#808080"></a-sphere>
+    <a-cylinder position="-2.522 7.5 -14" rotation="-90 0 0" color="#A9A9A9" height=".15" radius=".25"
+    animation="property: position; to: -8 8.5 -14; dur: 1000; easing:linear; loop: false"></a-cylinder>
+    <a-box position="-2.838 7.632 -14" rotation="0 0 -12" color="#A9A9A9" height=".03" width=".25" depth=".15"
+           animation="property: position; to: -8.316 8.632 -14; dur: 1000; easing:linear; loop: false"></a-box>
+    <a-box position="-2.869 7.474 -14" rotation="0 0 -12" color="#A9A9A9" height=".03" width=".25" depth=".15"
+           animation="property: position; to: -8.347 8.474 -14; dur: 1000; easing:linear; loop: false"></a-box>
+    <a-box position="-2.787 7.652 -14" rotation="0 0 -12" color="#A9A9A9" height=".035" width=".2" depth=".15"
+           animation="property: position; to: -8.265 8.652 -14; dur: 1000; easing:linear; loop: false"></a-box>
+    <a-box position="-2.838 7.435 -14" rotation="0 0 -12" color="#A9A9A9" height=".035" width=".2" depth=".15"
+           animation="property: position; to: -8.316 8.435 -14; dur: 1000; easing:linear; loop: false"></a-box>
+  </a-scene>
+</body>
+</html>
