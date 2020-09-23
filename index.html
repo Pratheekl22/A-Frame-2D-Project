@@ -10,6 +10,8 @@
     <a-plane rotation="-90 90 0" position="0 0 -8" color="#90EE90" height="10" width="10" depth="5"></a-plane>
     <a-camera position="0 3 0"></a-camera>
     <a-sky color="#ADD8E6"></a-sky>
+    <a-entity light="type:directional; castShadow:true; intensity: .5" position="0 5 10"></a-entity>
+    <a-entity light="type:ambient; color:#BBB; intensity:.75;"></a-entity>
 
     <!--Trees in scene-->
       <a-cylinder position="-3.407 1.52 -4.37" color="#765c48" height="3" radius=".3"></a-cylinder>
@@ -67,7 +69,7 @@
     <a-cylinder position="-2.446 .423 -6.009" rotation="5 0 -12" color="#333333" height=".15" radius=".02"></a-cylinder>
 
     <!--Sky pieces (death star and falcon)-->
-    <a-sphere src="DSTexture.jpg" position="-5 7.5 -13.044" rotation="-20 -165 0" color="#808080"></a-sphere>
+    <a-sphere src="DSTexture.jpg" position="-5 7.5 -13.044" rotation="-20 -165 0" color="#808080" shadow></a-sphere>
     <a-cylinder position="-2.522 7.5 -14" rotation="-90 0 0" color="#A9A9A9" height=".15" radius=".25"
     animation="property: position; to: -8 8.5 -14; dur: 1000; easing:linear; loop: false"></a-cylinder>
     <a-box position="-2.838 7.632 -14" rotation="0 0 -12" color="#A9A9A9" height=".03" width=".25" depth=".15"
